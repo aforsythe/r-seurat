@@ -1,0 +1,15 @@
+{
+    "restore_source_documents": false,
+    "save_workspace": "never",
+    "load_workspace": false,
+    "initial_working_directory": "~",
+    "always_save_history": false,
+    "restore_last_project": false,
+    "graphics_antialiasing": "subpixel",
+    "posix_terminal_shell": "custom",
+    "custom_shell_command": "/bin/bash",
+    "custom_shell_options": "--rcfile ~/.bashrc"
+    "python_type": "conda",
+    "python_version": "3.8.5",
+    "python_path": "/opt/conda/bin/python"
+}

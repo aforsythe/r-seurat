@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+   r_seurat:
+     image: 'aforsythe/r-seurat:dev'
+     build:
+       context: ..
+       dockerfile: 'Dockerfile'
+       args:
+        - 'SEURAT_VERSION=dev'
+        - 'RENV_VERSION=0.13.1'
+        - 'CONDA_VERSION=py38_4.9.2'
+     volumes:
+       - '~/r_data/:/home/rstudio/r_data/'
+       - '~/.renv_docker/cache:/renv/cache/'
+     ports:
+       - '8787:8787'
+     environment:
+       - 'DISABLE_AUTH=true'
